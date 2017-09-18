@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox prefHeight="67.0" prefWidth="600.0" style="-fx-background-color: silver;">
+         <children>
+            <Label text="Assignment 7">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="\@author: Hieu Duong" />
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <TextField fx:id="InputText" layoutX="235.0" layoutY="100.0" prefHeight="27.0" prefWidth="132.0" promptText="Enter Value Here" />
+      <Button fx:id="SubmitBtn" layoutX="235.0" layoutY="145.0" mnemonicParsing="false" onAction="#SubmitBtn_Click" prefHeight="27.0" prefWidth="132.0" text="Submit" />
+      <GridPane layoutX="14.0" layoutY="214.0" prefHeight="125.0" prefWidth="561.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="103.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="119.0" minWidth="10.0" prefWidth="97.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Current Index:" />
+            <Label text="Original Array:" GridPane.rowIndex="1" />
+            <Label text="Sorted Array:" GridPane.rowIndex="2" />
+            <Label text="Final Array:" GridPane.rowIndex="3" />
+            <Label fx:id="CurrentIndexLB" text="Value" GridPane.columnIndex="1" />
+            <Label fx:id="OriginalArrayLB" text="Value" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="SortedArrayLB" text="Value" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="FinalArrayLB" text="Value" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
